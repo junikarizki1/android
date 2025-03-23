@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No. Tujuan : "
+        android:id="@+id/textview"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/ed_no"
+        android:layout_below="@+id/textview"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teks Pesan : "
+        android:id="@+id/textview2"
+        android:layout_below="@+id/ed_no"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textImeMultiLine"
+        android:ems="10"
+        android:id="@+id/ed_pesan"
+        android:layout_below="@+id/textview2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+    
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="KIRIM"
+        android:id="@+id/btn_kirim"
+        android:layout_below="@+id/ed_pesan"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+</RelativeLayout>
